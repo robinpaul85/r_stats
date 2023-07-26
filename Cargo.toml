@@ -1,5 +1,5 @@
 [package]
-name = "r_mathlib"
+name = "r_stats"
 description = "Contains fix to bindgen error in r_stats crate."
 version = "0.1.0"
 authors = ["Robin Paul <robin.paul@stjude.org>"]

@@ -181,7 +181,7 @@ fn main() {
         .header("wrapper.h")
         .parse_callbacks(Box::new(bindgen::CargoCallbacks));
     for fn_name in FN_NAMES.iter() {
-        builder = builder.whitelist_function(fn_name);
+        builder = builder.allowlist_function(fn_name);
     }
     let bindings = builder.generate().expect("Unable to generate bindings");
     let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
